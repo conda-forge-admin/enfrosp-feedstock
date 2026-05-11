@@ -18,7 +18,7 @@ build:
 
 requirements:
   host:
-    - python {{ python_min }}
+    - python >{{ python_min }}  # with Python 3.10, the builds hang for hours
     - pip
     - hatchling
   run:
